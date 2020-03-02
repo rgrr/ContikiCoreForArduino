@@ -7,7 +7,7 @@
             "name": "Hardy Griech",
             "url": "https://github.com/rgrr",
             "maintainer": true
-        },
+        }
     ],
     "repository": {
         "type": "git",
