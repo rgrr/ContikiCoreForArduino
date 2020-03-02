@@ -13,7 +13,13 @@
         "type": "git",
         "url": "https://github.com/rgrr/ContikiCoreForArduino.git"
     },
-    "version": "0.0.0",
+    "version": "0.0.2",
     "license": "BSD",
-    "frameworks": "arduino"
+    "frameworks": "arduino",
+    "build": {
+        "flags": [
+            "-Iconf",
+            "-Icore"
+        ]
+    }
 }
