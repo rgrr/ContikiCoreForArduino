@@ -1,0 +1,19 @@
+{
+    "name": "ContikiCoreForArduino",
+    "description": "ContikiCoreForArduino is a library containing some core components of Contiki-OS.",
+    "keywords": "led,noise,rgb,math,fast",
+    "authors": [
+        {
+            "name": "Hardy Griech",
+            "url": "https://github.com/rgrr",
+            "maintainer": true
+        },
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rgrr/ContikiCoreForArduino.git"
+    },
+    "version": "0.0.0",
+    "license": "BSD",
+    "frameworks": "arduino"
+}
