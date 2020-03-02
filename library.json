@@ -1,7 +1,7 @@
 {
     "name": "ContikiCoreForArduino",
     "description": "ContikiCoreForArduino is a library containing some core components of Contiki-OS.",
-    "keywords": "led,noise,rgb,math,fast",
+    "keywords": "os,contiki,protothread,process,timer,etimer",
     "authors": [
         {
             "name": "Hardy Griech",
