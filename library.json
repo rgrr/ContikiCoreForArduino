@@ -13,8 +13,10 @@
         "type": "git",
         "url": "https://github.com/rgrr/ContikiCoreForArduino.git"
     },
-    "version": "0.0.3",
+    "version": "0.0.5",
+    "license": "BSD-3-Clause",
     "frameworks": "arduino",
+    "platforms": "espressif32",
     "build": {
         "flags": [
             "-Iconf",
