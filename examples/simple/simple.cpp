@@ -15,6 +15,7 @@ PROCESS_THREAD( DemoOutput, ev, data )
     PROCESS_BEGIN();
 
     Serial.printf( "Starting DemoOutput()\n" );
+    PROCESS_PAUSE();
 
     etimer_set( &timer, MS_TO_CLOCK_SECOND( 1000 ) );
     for (;;) {
