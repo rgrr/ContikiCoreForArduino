@@ -1,12 +1,7 @@
-#if defined(ARDUINO_ARCH_ESP32)
+#if defined(ARDUINO_ARCH_RP2040)
 
+#include <hardware/timer.h>
 #include "contiki.h"
-
-#include <esp32-hal-timer.h>
-
-
-/* create a hardware timer */
-hw_timer_t * timer = NULL;
 
 
 
@@ -19,7 +14,8 @@ hw_timer_t * timer = NULL;
  */
 clock_time_t clock_time(void)
 {
-    return timerRead( timer );
+    uint64_t time_us = time_us_64();
+    return (clock_time_t)((CLOCK_SECOND * time_us) / 1000000);
 }   // clock_time
 
 
@@ -36,7 +32,6 @@ void clock_update( clock_time_t next_event )
 
 void clock_start( void )
 {
-    timer = timerBegin( 0, 80000000 / CLOCK_CONF_SECOND, true );
 }   // clock_start
 
 #endif
