@@ -1,7 +1,8 @@
 {
     "name": "ContikiCoreForArduino",
+    "version": "0.0.8",
     "description": "ContikiCoreForArduino is a library containing some core components of Contiki-OS.",
-    "keywords": "os,contiki,protothread,process,timer,etimer",
+    "keywords": ["os", "contiki", "protothread", "process", "timer", "etimer"],
     "authors": [
         {
             "name": "Hardy Griech",
@@ -13,14 +14,15 @@
         "type": "git",
         "url": "https://github.com/rgrr/ContikiCoreForArduino.git"
     },
-    "version": "0.0.7",
     "license": "BSD-3-Clause",
     "frameworks": "arduino",
-    "platforms": "espressif32",
+    "platforms": ["espressif32", "raspberrypi"],
+    "architectures": ["esp32", "rp2040"],
     "build": {
         "flags": [
             "-Iconf",
             "-Icore"
         ]
-    }
+    },
+    "headers": ["core/contiki.h"]
 }

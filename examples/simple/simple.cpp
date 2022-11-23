@@ -14,12 +14,16 @@ PROCESS_THREAD( DemoOutput, ev, data )
 
     PROCESS_BEGIN();
 
-    Serial.printf( "Starting DemoOutput()\n" );
+    Serial.println( "Starting DemoOutput()" );
     PROCESS_PAUSE();
 
     etimer_set( &timer, MS_TO_CLOCK_SECOND( 1000 ) );
     for (;;) {
-        Serial.printf( "contiki time: %u[tt] %u[ms]\n", clock_time(), CLOCK_SECOND_TO_MS(clock_time()) );
+        Serial.print( "contiki time: " );
+        Serial.print( clock_time(), 10 );
+        Serial.print( "[tt] " );
+        Serial.print( CLOCK_SECOND_TO_MS(clock_time()), 10 );
+        Serial.println( "[ms]" );
 
         PROCESS_WAIT_UNTIL( etimer_expired( &timer) );
         etimer_reset( &timer );
