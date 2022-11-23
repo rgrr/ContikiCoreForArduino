@@ -39,6 +39,7 @@
 #include "sys/process.h"
 
 #include "sys/timer.h"
+#include "sys/ctimer.h"
 #include "sys/etimer.h"
 
 #include "sys/pt.h"
