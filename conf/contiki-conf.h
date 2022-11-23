@@ -9,7 +9,7 @@
 #define PROCESS_CONF_STATS     1
 
 /** 32768/32 [Hz] */
-#define CLOCK_CONF_SECOND      2000
+#define CLOCK_CONF_SECOND      1000
 
 #define CONTIKI_PRINTF(...)
 

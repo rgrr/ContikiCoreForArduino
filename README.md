@@ -18,6 +18,7 @@ The actual scheduling of the processes has to be done in the Arduino main loop, 
 ## Release Notes
 ### 0.0.8 (2022-11-23)
 * new target: RP2040
+* added Contiki ctimer
 
 ### 0.0.7 (2020-03-08)
 * library is now a pio project on its own

@@ -2,7 +2,7 @@
     "name": "ContikiCoreForArduino",
     "version": "0.0.8",
     "description": "ContikiCoreForArduino is a library containing some core components of Contiki-OS.",
-    "keywords": ["os", "contiki", "protothread", "process", "timer", "etimer"],
+    "keywords": ["os", "contiki", "protothread", "process", "timer", "ctimer", "etimer"],
     "authors": [
         {
             "name": "Hardy Griech",
@@ -24,5 +24,5 @@
             "-Icore"
         ]
     },
-    "headers": ["core/contiki.h"]
+    "headers": ["core/contiki.h", "conf/contiki-conf.h"]
 }
