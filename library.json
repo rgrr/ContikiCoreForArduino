@@ -1,6 +1,6 @@
 {
     "name": "ContikiCoreForArduino",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "ContikiCoreForArduino is a library containing some core components of Contiki-OS.",
     "keywords": ["os", "contiki", "protothread", "process", "timer", "ctimer", "etimer"],
     "authors": [
