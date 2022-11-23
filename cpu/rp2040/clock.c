@@ -1,10 +1,7 @@
 #if defined(ARDUINO_ARCH_RP2040)
 
+#include <hardware/timer.h>
 #include "contiki.h"
-
-
-
-static clock_time_t mytime;
 
 
 
@@ -17,7 +14,8 @@ static clock_time_t mytime;
  */
 clock_time_t clock_time(void)
 {
-    return ++mytime;
+    uint64_t time_us = time_us_64();
+    return (clock_time_t)((CLOCK_SECOND * time_us) / 1000000);
 }   // clock_time
 
 
@@ -34,7 +32,6 @@ void clock_update( clock_time_t next_event )
 
 void clock_start( void )
 {
-    mytime = 0;
 }   // clock_start
 
 #endif
