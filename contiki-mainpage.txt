@@ -49,6 +49,7 @@ thread-like construct called protothreads.
 
 \sa \ref process "Contiki processes"
 \sa \ref pt "Protothreads"
+\sa \ref ctimer "Callback timers"
 \sa \ref etimer "Event timers"
 
 
@@ -57,8 +58,9 @@ thread-like construct called protothreads.
 
 Contiki provides different timer types.
 
-\sa \ref etimer
 \sa \ref timer
+\sa \ref cimer
+\sa \ref etimer
 
 
 <hr>

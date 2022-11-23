@@ -56,6 +56,11 @@
 
 #include "sys/etimer.h"
 
+#ifdef __cplusplus
+    extern "C"
+    {
+#endif //__cplusplus
+
 struct ctimer {
   struct ctimer *next;
   struct etimer etimer;
@@ -160,6 +165,10 @@ int ctimer_expired(struct ctimer *c);
  *             should be called from the system boot up code.
  */
 void ctimer_init(void);
+
+#ifdef __cplusplus
+    }
+#endif //__cplusplus
 
 #endif /* CTIMER_H_ */
 /** @} */
